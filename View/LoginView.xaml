@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:context="clr-namespace:LoginAuthMVVM.ViewModel"
              x:Class="LoginAuthMVVM.View.LoginView">
   
-      <StackLayout HorizontalOptions="CenterAndExpand">
+      <StackLayout HorizontalOptions="CenterAndExpand" BindingContext="{context:LoginViewModel}">
         <Label FontAttributes="Bold" FontSize="19"  Text="Login, MVVM and Binding" />
-        <Entry Margin="5" Placeholder="Enter username..." BackgroundColor="DimGrey" PlaceholderColor="White" />
+        <Entry Margin="5" Placeholder="Enter username..." Text="{Binding Username}" BackgroundColor="DimGrey" PlaceholderColor="White" />
         <Entry Margin="5" Placeholder="Enter password..." BackgroundColor="DimGray" PlaceholderColor="White" />
-        <Label Margin="5" Text="" FontSize="15" BackgroundColor="DarkOliveGreen" />
-        <Label Margin="5" Text="" FontSize="15" BackgroundColor="DarkOliveGreen"/>
+        <Label Margin="5" Text="{Binding Username}" FontSize="15" BackgroundColor="DarkOliveGreen" />
+        <Button Margin="5" Text="Login" BackgroundColor="DarkOrange" Command="{Binding ProcessLoginCommand}" /> 
     </StackLayout>
  
 </ContentPage>
