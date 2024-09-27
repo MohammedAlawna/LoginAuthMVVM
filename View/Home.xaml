@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:binding="clr-namespace:LoginAuthMVVM.ViewModel"
              x:Class="LoginAuthMVVM.View.Home">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    
+        <StackLayout HorizontalOptions="Center" BindingContext="{binding:LoginViewModel}">
+        <Label Text="You are logged in as: " FontSize="18" Margin="5" />
+        <Label Text="{Binding Username}" BackgroundColor="DarkOliveGreen" FontSize="17" />
+
+        <Editor Text="{Binding PostContent}" Margin="5" MaximumWidthRequest="140" />
+        <Label Background="DarkOliveGreen" FontSize="18" Text="{Binding PostContent}"/>
+    </StackLayout>
+    
 </ContentPage>
