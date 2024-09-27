@@ -3,8 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginAuthMVVM.View.LoginView">
   
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
+      <StackLayout HorizontalOptions="CenterAndExpand">
+        <Label FontAttributes="Bold" FontSize="19"  Text="Login, MVVM and Binding" />
+        <Entry Margin="5" Placeholder="Enter username..." BackgroundColor="DimGrey" PlaceholderColor="White" />
+        <Entry Margin="5" Placeholder="Enter password..." BackgroundColor="DimGray" PlaceholderColor="White" />
+        <Label Margin="5" Text="" FontSize="15" BackgroundColor="DarkOliveGreen" />
+        <Label Margin="5" Text="" FontSize="15" BackgroundColor="DarkOliveGreen"/>
+    </StackLayout>
  
 </ContentPage>
