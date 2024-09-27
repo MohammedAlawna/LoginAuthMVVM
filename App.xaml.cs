@@ -1,4 +1,6 @@
-﻿namespace LoginAuthMVVM
+﻿using LoginAuthMVVM.View;
+
+namespace LoginAuthMVVM
 {
     public partial class App : Application
     {
