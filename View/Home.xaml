@@ -12,7 +12,8 @@
         <Label Background="DarkOliveGreen" FontSize="18" Text="{Binding PostContent}" Margin="5"/>
 
         <Label Text="DateTime Section" FontSize="18" />
-        <Button BackgroundColor="DarkOliveGreen" BindingContext="{binding:HomeViewModel}" Command="{Binding GetDateTimeCommand}" Text="Get Current DateTime" /> 
+        <Button BackgroundColor="DarkOliveGreen" Margin="5" BindingContext="{binding:HomeViewModel}" Command="{Binding GetDateTimeCommand}" Text="Get Current DateTime" />
+        <Button BackgroundColor="DarkGoldenrod" Margin="5" BindingContext="{binding:HomeViewModel}" Command="{Binding GetTimeOnly}" Text="Get Current Time"/> 
     </StackLayout>
     
 </ContentPage>
