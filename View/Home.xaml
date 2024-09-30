@@ -6,10 +6,13 @@
     
         <StackLayout HorizontalOptions="Center" BindingContext="{binding:LoginViewModel}">
         <Label Text="You are logged in as: " FontSize="18" Margin="5" />
-        <Label Text="{Binding Username}" BackgroundColor="DarkOliveGreen" FontSize="17" />
+        <Label Text="{Binding Username}" BackgroundColor="DarkOliveGreen" FontSize="17" Margin="5" />
 
         <Editor Text="{Binding PostContent}" Margin="5" MaximumWidthRequest="140" />
-        <Label Background="DarkOliveGreen" FontSize="18" Text="{Binding PostContent}"/>
+        <Label Background="DarkOliveGreen" FontSize="18" Text="{Binding PostContent}" Margin="5"/>
+
+        <Label Text="DateTime Section" FontSize="18" />
+        <Button BackgroundColor="DarkOliveGreen" BindingContext="{binding:HomeViewModel}" Command="{Binding GetDateTimeCommand}" Text="Get Current DateTime" /> 
     </StackLayout>
     
 </ContentPage>
