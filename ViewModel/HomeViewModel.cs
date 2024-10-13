@@ -18,15 +18,20 @@ namespace LoginAuthMVVM.ViewModel
         public HomeViewModel()
         {
             ProcessDateTimeCommand();
+            GetTimeOnlyCmd();
+        }
+
+        private void GetTimeOnlyCmd()
+        {
             GetTimeOnly = new Command(
-                execute: () =>
-                {
-                    //Time Only Operations:
-                    //Get Current Time only: 
-                    TimeOnly timeOnly = TimeOnly.FromDateTime(DateTime.Now);
-                    Debug.WriteLine("Get Current Time: " + timeOnly);
-                }
-                );
+                            execute: () =>
+                            {
+                                //Time Only Operations:
+                                //Get Current Time only: 
+                                TimeOnly timeOnly = TimeOnly.FromDateTime(DateTime.Now);
+                                Debug.WriteLine("Get Current Time: " + timeOnly);
+                            }
+                            );
         }
 
         private void ProcessDateTimeCommand()
