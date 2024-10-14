@@ -15,10 +15,36 @@ namespace LoginAuthMVVM.ViewModel
         public ICommand AddSevenHours { get; private set; }
 
         public ICommand GetTimeDifference { get; private set; }
+        public ICommand GetTimeDiffAlgorithm { get; private set; }
+
         public HomeViewModel()
         {
             ProcessDateTimeCommand();
             GetTimeOnlyCmd();
+
+            GetTimeDiffAlgorithm = new Command(
+                execute: () =>
+                {
+                    //IMP:: Get Time Diff after adding, then countdown:
+                    //1- Get Current Time:
+                    var currentDateTime = DateTime.UtcNow;
+                    Debug.Write("Current DateTime: " + currentDateTime);
+
+                    //2- Parse Time to add, add it to original time (new var)
+                    //TimeSpan to be added => (0 days, 7 hours, 00 seconds, 0000 milliseconds).
+                    TimeSpan twelveHoursTimeSpan = TimeSpan.Parse("0:7:00:00.0000");
+                    //Debug.WriteLine("Time To Be Added To Cureent Time: " + twelveHoursTimeSpan);
+
+                    var timeWithAddedDuration = currentDateTime.Add(twelveHoursTimeSpan);
+                    //Debug.WriteLine("New Time With Original: " + timeWithAddedDuration);
+
+                    //3- Get Difference of CurrentTime and NewAddedTime:
+                    var timeDifference = timeWithAddedDuration.Subtract(currentDateTime);
+                    Debug.WriteLine("Time Difference: " + timeDifference);
+
+                    //4- TODO: Countdown timer tick:
+                }
+                );
         }
 
         private void GetTimeOnlyCmd()

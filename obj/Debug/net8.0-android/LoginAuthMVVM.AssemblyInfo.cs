@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginAuthMVVM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f2d1109494f3de1a00d6e01a6ff3ea4c25dc782f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+55b4ba1081d7dca3156f6fd359d80546003a6c6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginAuthMVVM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginAuthMVVM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
