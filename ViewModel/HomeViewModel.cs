@@ -43,6 +43,7 @@ namespace LoginAuthMVVM.ViewModel
                     Debug.WriteLine("Time Difference: " + timeDifference);
 
                     //4- TODO: Countdown timer tick:
+
                 }
                 );
         }
