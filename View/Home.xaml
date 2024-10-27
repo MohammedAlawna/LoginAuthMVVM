@@ -15,7 +15,6 @@
         <Button BackgroundColor="DarkOliveGreen" Margin="5" BindingContext="{binding:HomeViewModel}" Command="{Binding GetDateTimeCommand}" Text="Get Current DateTime" />
         <Button BackgroundColor="DarkGoldenrod" Margin="5" BindingContext="{binding:HomeViewModel}" Command="{Binding GetTimeOnly}" Text="Get Current Time"/>
         <Button BackgroundColor="DarkOliveGreen" Margin="5" BindingContext="{binding:HomeViewModel}" Command="{Binding GetTimeDiffAlgorithm}" Text="Operate Time Difference" />
-
-    </StackLayout>
+           </StackLayout>
     
 </ContentPage>

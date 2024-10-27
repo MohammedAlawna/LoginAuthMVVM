@@ -1,0 +1,12 @@
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginAuthMVVM.csproj.AssemblyReference.cache
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginAuthMVVM.GeneratedMSBuildEditorConfig.editorconfig
