@@ -42,6 +42,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = LoginAuthMVVM.Resources.St
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Kudo/source/repos/LoginAuthMVVM/LoginAuthMVVM/View/FBSignIn.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginAuthMVVM.View.FBSignIn.xaml
+build_metadata.AdditionalFiles.TargetPath = View\FBSignIn.xaml
+build_metadata.AdditionalFiles.RelativePath = View\FBSignIn.xaml
+
+[C:/Users/Kudo/source/repos/LoginAuthMVVM/LoginAuthMVVM/View/FBSignUp.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginAuthMVVM.View.FBSignUp.xaml
+build_metadata.AdditionalFiles.TargetPath = View\FBSignUp.xaml
+build_metadata.AdditionalFiles.RelativePath = View\FBSignUp.xaml
+
 [C:/Users/Kudo/source/repos/LoginAuthMVVM/LoginAuthMVVM/View/Home.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginAuthMVVM.View.Home.xaml

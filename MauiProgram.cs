@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Firebase.Auth;
+using Firebase.Auth.Providers;
+using Microsoft.Extensions.Logging;
 
 namespace LoginAuthMVVM
 {
@@ -18,7 +20,17 @@ namespace LoginAuthMVVM
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            //Firebase Auth: Integration
+            builder.Services.AddSingleton(new FirebaseAuthClient
+                (new FirebaseAuthConfig()
+                {
+                    ApiKey = "AIzaSyAaahksGmC2M1IpC2gKmIY0DBIQcBqZInA",
+                    AuthDomain = "kudo1-38995.firebaseapp.com",
+                    Providers = new FirebaseAuthProvider[]
+                    {
+                    new EmailProvider()
+                    }
+                }));
             return builder.Build();
         }
     }
