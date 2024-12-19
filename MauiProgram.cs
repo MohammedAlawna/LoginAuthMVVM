@@ -1,5 +1,7 @@
 ﻿using Firebase.Auth;
 using Firebase.Auth.Providers;
+using LoginAuthMVVM.View;
+using LoginAuthMVVM.ViewModel;
 using Microsoft.Extensions.Logging;
 
 namespace LoginAuthMVVM
@@ -31,6 +33,18 @@ namespace LoginAuthMVVM
                     new EmailProvider()
                     }
                 }));
+
+            //Adding Required Services (Singelton) to Views:
+            //Adding Sign In Services:
+            builder.Services.AddSingleton<FBSignIn>();
+            builder.Services.AddSingleton<FBSignInViewModel>();
+
+            //Adding Sign Up Services:
+            builder.Services.AddSingleton<FBSignUp>();
+            builder.Services.AddSingleton<FBSignUpViewModel>();
+            
+
+
             return builder.Build();
         }
     }

@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Sign Up"
              x:Class="LoginAuthMVVM.View.FBSignUp">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Firebase Sign Up View!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical">
+            <Label FontSize="17" FontAttributes="Bold" Text="Sign Up" TextColor="Orange" />
+            <Entry Text="{Binding Email}" Placeholder="Enter email here.." FontSize="15" />
+            <Entry Text="{Binding Username}" Placeholder="Enter email here.." FontSize="15" />
+            <Entry Text="{Binding Password}" Placeholder="Enter password here.." IsPassword="True" FontSize="15"/>
+            <Button Text="Sign Up" BackgroundColor="DarkBlue" Command="{Binding FBSignUpCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
