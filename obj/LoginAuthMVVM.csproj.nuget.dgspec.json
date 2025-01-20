@@ -68,7 +68,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.0.0, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
@@ -119,7 +119,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.0.0, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
@@ -170,7 +170,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.0.0, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
@@ -222,7 +222,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.0.0, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
@@ -252,6 +252,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.31, 10.0.19041.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

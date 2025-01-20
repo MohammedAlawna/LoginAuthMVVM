@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Sign In"
+             xmlns:view="clr-namespace:LoginAuthMVVM.ViewModel"
              x:Class="LoginAuthMVVM.View.FBSignIn">
+    
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical">
             <Label FontSize="17" FontAttributes="Bold" Text="Sign In" TextColor="Orange" />
@@ -10,6 +12,7 @@
             <Entry Text="{Binding Password}" Placeholder="Enter password here.." IsPassword="True" FontSize="15"/>
             <Button Text="Sign In" BackgroundColor="DarkBlue" Command="{Binding FBSignInCommand}" />
             <Button Text="Sign Up" Command="{Binding NavigateFBSignUpCommand}" BackgroundColor="DarkOliveGreen" />
+            <Label FontSize="20" Text="{Binding Username}" TextColor="Orange" HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

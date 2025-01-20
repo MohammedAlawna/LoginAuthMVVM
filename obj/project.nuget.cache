@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oBLFGwRUmbx4HWP43NnWelnrei49uwm4OyA0YDC0Wl2He8X83eIKUkKvjAvhuXr3t3PukqKaGOwQk89EaCHsXw==",
+  "dgSpecHash": "/U+HC/H7Hb1Y0xL/o4qcPbDT7FCeX9XyPXZjWfMK9YXUI6Rov44pjsb6Y1fUkgWAY3lhAbHOuV4+HDtcg79izQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kudo\\source\\repos\\LoginAuthMVVM\\LoginAuthMVVM\\LoginAuthMVVM.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kudo\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
+    "C:\\Users\\Kudo\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "C:\\Users\\Kudo\\.nuget\\packages\\firebaseauthentication.net\\4.1.0\\firebaseauthentication.net.4.1.0.nupkg.sha512",
     "C:\\Users\\Kudo\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Kudo\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -113,7 +113,8 @@
     "C:\\Users\\Kudo\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk7\\1.9.0.1\\xamarin.kotlin.stdlib.jdk7.1.9.0.1.nupkg.sha512",
     "C:\\Users\\Kudo\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.9.0.1\\xamarin.kotlin.stdlib.jdk8.1.9.0.1.nupkg.sha512",
     "C:\\Users\\Kudo\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.7.2.1\\xamarin.kotlinx.coroutines.android.1.7.2.1.nupkg.sha512",
-    "C:\\Users\\Kudo\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512"
+    "C:\\Users\\Kudo\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
+    "C:\\Users\\Kudo\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,1 @@
+C:\Users\Kudo\source\repos\LoginAuthMVVM\LoginAuthMVVM\LoginAuthMVVM.csproj;x64

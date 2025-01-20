@@ -20,21 +20,27 @@ namespace LoginAuthMVVM.ViewModel
         [ObservableProperty]
         private string _password;
 
+        /*  [ObservableProperty]
+          private string _username;*/
+
+        public string Username => _authClient.User?.Info?.DisplayName;
+
         public FBSignInViewModel(FirebaseAuthClient authClient)
         {
             _authClient = authClient;
+            
         }
 
         [RelayCommand]
-        private async Task FBSignIn()
+        public async Task FBSignIn()
         {
             await _authClient.SignInWithEmailAndPasswordAsync(Email, Password);
-
+            OnPropertyChanged(nameof(Username));
         }
 
 
         [RelayCommand]
-        private async Task NavigateFBSignUp()
+        public async Task NavigateFBSignUp()
         {
             await Shell.Current.Navigation.PushAsync(new FBSignUp());
         }

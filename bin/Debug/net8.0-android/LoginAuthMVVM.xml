@@ -4,5 +4,44 @@
         <name>LoginAuthMVVM</name>
     </assembly>
     <members>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.Email">
+            <inheritdoc cref="F:LoginAuthMVVM.ViewModel.FBSignInViewModel._email"/>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.Password">
+            <inheritdoc cref="F:LoginAuthMVVM.ViewModel.FBSignInViewModel._password"/>
+        </member>
+        <member name="F:LoginAuthMVVM.ViewModel.FBSignInViewModel.fBSignInCommand">
+            <summary>The backing field for <see cref="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.FBSignInCommand"/>.</summary>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.FBSignInCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginAuthMVVM.ViewModel.FBSignInViewModel.FBSignIn"/>.</summary>
+        </member>
+        <member name="F:LoginAuthMVVM.ViewModel.FBSignInViewModel.navigateFBSignUpCommand">
+            <summary>The backing field for <see cref="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.NavigateFBSignUpCommand"/>.</summary>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.NavigateFBSignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginAuthMVVM.ViewModel.FBSignInViewModel.NavigateFBSignUp"/>.</summary>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignUpViewModel.Email">
+            <inheritdoc cref="F:LoginAuthMVVM.ViewModel.FBSignUpViewModel._email"/>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignUpViewModel.Username">
+            <inheritdoc cref="F:LoginAuthMVVM.ViewModel.FBSignUpViewModel._username"/>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignUpViewModel.Password">
+            <inheritdoc cref="F:LoginAuthMVVM.ViewModel.FBSignUpViewModel._password"/>
+        </member>
+        <member name="F:LoginAuthMVVM.ViewModel.FBSignUpViewModel.fBSignUpCommand">
+            <summary>The backing field for <see cref="P:LoginAuthMVVM.ViewModel.FBSignUpViewModel.FBSignUpCommand"/>.</summary>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignUpViewModel.FBSignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginAuthMVVM.ViewModel.FBSignUpViewModel.FBSignUp"/>.</summary>
+        </member>
+        <member name="F:LoginAuthMVVM.ViewModel.FBSignUpViewModel.navigateFBSignInCommand">
+            <summary>The backing field for <see cref="P:LoginAuthMVVM.ViewModel.FBSignUpViewModel.NavigateFBSignInCommand"/>.</summary>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignUpViewModel.NavigateFBSignInCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginAuthMVVM.ViewModel.FBSignUpViewModel.NavigateFBSignIn"/>.</summary>
+        </member>
     </members>
 </doc>

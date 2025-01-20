@@ -8,7 +8,7 @@
         <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical">
             <Label FontSize="17" FontAttributes="Bold" Text="Sign Up" TextColor="Orange" />
             <Entry Text="{Binding Email}" Placeholder="Enter email here.." FontSize="15" />
-            <Entry Text="{Binding Username}" Placeholder="Enter email here.." FontSize="15" />
+            <Entry Text="{Binding Username}" Placeholder="Enter username here.." FontSize="15" />
             <Entry Text="{Binding Password}" Placeholder="Enter password here.." IsPassword="True" FontSize="15"/>
             <Button Text="Sign Up" BackgroundColor="DarkBlue" Command="{Binding FBSignUpCommand}" />
         </StackLayout>
