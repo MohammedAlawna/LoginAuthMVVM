@@ -42,7 +42,7 @@ namespace LoginAuthMVVM.ViewModel
         [RelayCommand]
         public async Task NavigateFBSignUp()
         {
-            await Shell.Current.Navigation.PushAsync(new FBSignUp());
+            await Shell.Current.Navigation.PushAsync(new FBSignUp(_authClient));
         }
     }
 }
