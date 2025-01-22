@@ -12,6 +12,7 @@
             <Entry Text="{Binding Password}" Placeholder="Enter password here.." IsPassword="True" FontSize="15"/>
             <Button Text="Sign In" BackgroundColor="DarkBlue" Command="{Binding FBSignInCommand}" />
             <Button Text="Sign Up" Command="{Binding NavigateFBSignUpCommand}" BackgroundColor="DarkOliveGreen" />
+            <Button Text="Forgot Password" Command="{Binding SendPasswordResetEmailCommand}" BackgroundColor="DarkGreen"/>
             <Label FontSize="20" Text="{Binding Username}" TextColor="Orange" HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>

@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Firebase.Auth;
+using Firebase.Auth.Providers;
 using LoginAuthMVVM.View;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace LoginAuthMVVM.ViewModel
     public partial class FBSignInViewModel : ObservableObject
     {
         private readonly FirebaseAuthClient _authClient;
+         
 
         [ObservableProperty]
         private string _email;
@@ -31,10 +33,19 @@ namespace LoginAuthMVVM.ViewModel
             
         }
 
+        //Reset Password/ForgetPassword with Firebase =>
+        [RelayCommand]
+        public async Task SendPasswordResetEmail(string email)
+        {
+            await _authClient.ResetEmailPasswordAsync("mohamedalawnae@yahoo.com");
+        }
+
+       
         [RelayCommand]
         public async Task FBSignIn()
         {
             await _authClient.SignInWithEmailAndPasswordAsync(Email, Password);
+           // _authClient.Sen
             OnPropertyChanged(nameof(Username));
         }
 
@@ -47,11 +58,11 @@ namespace LoginAuthMVVM.ViewModel
     }
 
     //Interface: Access Token Purposes (Secret Message):
-    public interface IGetSecretMessageQuery
+  /*  public interface IGetSecretMessageQuery
     {
-        //Note: to complete this you need to install refit.httpclientfactory
-       /* [Get("/")]
-        Task<SecretMessageResponse> Execute();*/
-    }
+        //Note: to complete this you need to install refit, refit.httpclientfactory
+        [Get("/")]
+        Task<SecretMessageResponse> Execute();
+    }*/
 
 }

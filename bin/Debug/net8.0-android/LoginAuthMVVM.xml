@@ -10,6 +10,12 @@
         <member name="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.Password">
             <inheritdoc cref="F:LoginAuthMVVM.ViewModel.FBSignInViewModel._password"/>
         </member>
+        <member name="F:LoginAuthMVVM.ViewModel.FBSignInViewModel.sendPasswordResetEmailCommand">
+            <summary>The backing field for <see cref="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.SendPasswordResetEmailCommand"/>.</summary>
+        </member>
+        <member name="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.SendPasswordResetEmailCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:LoginAuthMVVM.ViewModel.FBSignInViewModel.SendPasswordResetEmail(System.String)"/>.</summary>
+        </member>
         <member name="F:LoginAuthMVVM.ViewModel.FBSignInViewModel.fBSignInCommand">
             <summary>The backing field for <see cref="P:LoginAuthMVVM.ViewModel.FBSignInViewModel.FBSignInCommand"/>.</summary>
         </member>

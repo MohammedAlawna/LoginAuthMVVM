@@ -8,6 +8,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FirebaseAdmin;
+using FirebaseAdmin.Auth;
 
 namespace LoginAuthMVVM.ViewModel
 {
@@ -30,11 +32,19 @@ namespace LoginAuthMVVM.ViewModel
             
         }
 
+        public async Task SendVerificationEmail(string email)
+        {
+            //Add firebaseadmin package (nuget package)
+            await FirebaseAuth.DefaultInstance.GenerateEmailVerificationLinkAsync(email);
+        }
+
+
         [RelayCommand]
         public async Task FBSignUp()
         {
             Debug.WriteLine("You just signed Up!");
             await _authClient.CreateUserWithEmailAndPasswordAsync(Email, Password, Username);
+            
             await Shell.Current.Navigation.PushAsync(new FBSignIn(_authClient));
         }
 
