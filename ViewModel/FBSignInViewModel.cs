@@ -45,4 +45,13 @@ namespace LoginAuthMVVM.ViewModel
             await Shell.Current.Navigation.PushAsync(new FBSignUp(_authClient));
         }
     }
+
+    //Interface: Access Token Purposes (Secret Message):
+    public interface IGetSecretMessageQuery
+    {
+        //Note: to complete this you need to install refit.httpclientfactory
+       /* [Get("/")]
+        Task<SecretMessageResponse> Execute();*/
+    }
+
 }
