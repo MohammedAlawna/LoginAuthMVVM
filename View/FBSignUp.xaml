@@ -11,6 +11,7 @@
             <Entry Text="{Binding Username}" Placeholder="Enter username here.." FontSize="15" />
             <Entry Text="{Binding Password}" Placeholder="Enter password here.." IsPassword="True" FontSize="15"/>
             <Button Text="Sign Up" BackgroundColor="DarkBlue" Command="{Binding FBSignUpCommand}" />
+            <Button Text="Verify Email (Testing)" BackgroundColor="DarkOrange" Command="{Binding SendVerificationEmailCommand}"  />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

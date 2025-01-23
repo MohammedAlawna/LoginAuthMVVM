@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Firebase.Auth;
-using Firebase.Auth.Providers;
+//using Firebase.Auth.Providers;
 using LoginAuthMVVM.View;
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,8 @@ namespace LoginAuthMVVM.ViewModel
 {
     public partial class FBSignInViewModel : ObservableObject
     {
-        private readonly FirebaseAuthClient _authClient;
+       // private readonly FirebaseAuthClient _authClient;
+        
          
 
         [ObservableProperty]
@@ -25,11 +26,11 @@ namespace LoginAuthMVVM.ViewModel
         /*  [ObservableProperty]
           private string _username;*/
 
-        public string Username => _authClient.User?.Info?.DisplayName;
+       // public string Username => _authClient.User?.Info?.DisplayName;
 
-        public FBSignInViewModel(FirebaseAuthClient authClient)
+        public FBSignInViewModel(/*FirebaseAuthClient authClient*/)
         {
-            _authClient = authClient;
+           // _authClient = authClient;
             
         }
 
@@ -37,23 +38,23 @@ namespace LoginAuthMVVM.ViewModel
         [RelayCommand]
         public async Task SendPasswordResetEmail(string email)
         {
-            await _authClient.ResetEmailPasswordAsync("mohamedalawnae@yahoo.com");
+          //  await _authClient.ResetEmailPasswordAsync(email);
         }
 
        
         [RelayCommand]
         public async Task FBSignIn()
         {
-            await _authClient.SignInWithEmailAndPasswordAsync(Email, Password);
+            //await _authClient.SignInWithEmailAndPasswordAsync(Email, Password);
            // _authClient.Sen
-            OnPropertyChanged(nameof(Username));
+          //  OnPropertyChanged(nameof(Username));
         }
 
 
         [RelayCommand]
         public async Task NavigateFBSignUp()
         {
-            await Shell.Current.Navigation.PushAsync(new FBSignUp(_authClient));
+            await Shell.Current.Navigation.PushAsync(new FBSignUp(/*_authClient*/));
         }
     }
 

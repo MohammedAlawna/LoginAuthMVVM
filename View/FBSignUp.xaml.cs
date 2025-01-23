@@ -13,13 +13,13 @@ namespace LoginAuthMVVM.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FBSignUp : ContentPage
     {
-        private readonly FirebaseAuthClient _authClient;
-        public FBSignUp(FirebaseAuthClient authClient)
+       // private readonly FirebaseAuthClient _authClient;
+        public FBSignUp(/*FirebaseAuthClient authClient*/)
         {
             InitializeComponent();
 
-            _authClient = authClient;
-            BindingContext = new FBSignUpViewModel(_authClient);
+           // _authClient = authClient;
+            BindingContext = new FBSignUpViewModel(/*_authClient*/);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Firebase.Auth;
-using Firebase.Auth.Providers;
-using Firebase.Auth.Repository;
+//using Firebase.Auth.Providers;
+//using Firebase.Auth.Repository;
 using LoginAuthMVVM.View;
 using LoginAuthMVVM.ViewModel;
 using Microsoft.Extensions.Logging;
@@ -24,7 +24,7 @@ namespace LoginAuthMVVM
     		builder.Logging.AddDebug();
 #endif
             //Firebase Auth: Integration
-            builder.Services.AddSingleton(new FirebaseAuthClient
+          /*  builder.Services.AddSingleton(new FirebaseAuthClient
                 (new FirebaseAuthConfig()
                 {
                     ApiKey = "AIzaSyAaahksGmC2M1IpC2gKmIY0DBIQcBqZInA",
@@ -35,7 +35,7 @@ namespace LoginAuthMVVM
                     },
                     //UserRepos: includes methods for signing in, signing up, managing sessions for users.
                     UserRepository = new FileUserRepository("SecretMessage")
-        }));
+        }));*/
 
             //Adding Required Services (Singelton) to Views:
             //Adding Sign In Services:
